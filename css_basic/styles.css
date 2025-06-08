@@ -1,0 +1,79 @@
+/* Flexbox layout for main structure */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  min-height: 300px; /* so content area is visible */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+article {
+  flex: 2;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+aside {
+  flex: 1;
+  background-color: #e9ecef;
+  padding: 1rem;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+header, footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+body.works_on_smartphone main {
+  flex-direction: column;
+}
+
+body.works_on_smartphone article,
+body.works_on_smartphone aside {
+  flex: none;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Basic styling */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: white;
+}
