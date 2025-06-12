@@ -1,0 +1,185 @@
+/* === Reset & base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* === Header === */
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 60px;
+  z-index: 10;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* === Hero Section === */
+.hero {
+  background-image: url('./images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 180px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.keywords {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.keywords span {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.hero-content button {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+  background-color: #a650e0;
+}
+
+/* === Instructors Section === */
+.instructors-intro {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.instructors-intro h2 {
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+}
+
+.instructors-intro h2 span {
+  color: #C271FF;
+  font-weight: 700;
+}
+
+.instructors {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.instructor-card {
+  text-align: center;
+  color: white;
+  max-width: 200px;
+}
+
+.instructor-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* === Quote Section === */
+.quote {
+  background-color: #C271FF;
+  padding: 80px 40px;
+  color: white;
+}
+
+.quote-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quote-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-text {
+  max-width: 600px;
+}
+
+.quote-text blockquote {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.quote-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.quote-text p {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.85;
+}
