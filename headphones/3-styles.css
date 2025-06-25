@@ -1,0 +1,247 @@
+/* Base and General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #FF6565;
+  --text-color: #ffffff;
+  --bg-color: #000000;
+  --font-main: 'Source Sans Pro', sans-serif;
+  --max-width: 1000px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--text-color);
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--main-color);
+}
+
+.hero {
+  padding: 140px 20px 100px;
+  background: url('images/headphones_hero_1.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero button {
+  padding: 15px 40px;
+  background-color: var(--main-color);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.hero button:hover {
+  opacity: 0.9;
+}
+
+.hero-description {
+  font-size: 16px;
+  margin-top: 40px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ddd;
+}
+
+/* What We Do Section */
+.what-we-do {
+  background: #fff;
+  color: #071629;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.icon-block {
+  flex: 1 1 22%;
+  margin: 10px;
+  max-width: 22%;
+}
+
+.icon-block span {
+  font-size: 40px;
+  color: #FF6565;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.icon-block h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.icon-block p {
+  font-size: 14px;
+}
+
+/* Our Results Section */
+.our-results {
+  position: relative;
+  background: url('images/headphones_hero_2.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.our-results .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+.our-results .container {
+  position: relative;
+  z-index: 1;
+}
+
+.results-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.results-text {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.results-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.stat {
+  width: 22%;
+  text-align: center;
+  position: relative;
+}
+
+.pentagon {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.percent {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 14px;
+}
+/* Contact Us Section */
+.contact {
+  background: #fff;
+  padding: 80px 20px;
+  color: #071629;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  border-radius: 4px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--main-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 101, 101, 0.6);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e14e4e;
+}
