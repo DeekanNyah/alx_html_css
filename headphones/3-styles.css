@@ -92,7 +92,6 @@ body {
   margin-right: auto;
   color: #ddd;
 }
-
 /* What We Do Section */
 .what-we-do {
   background: #fff;
@@ -173,6 +172,40 @@ body {
   width: 22%;
   text-align: center;
   position: relative;
+}
+.pentagon-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.pentagon-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.text-inside .percent {
+  font-size: 18px;
+  color: #fff;
+}
+
+.text-inside .label {
+  font-size: 12px;
+  color: #fff;
 }
 
 .pentagon {
