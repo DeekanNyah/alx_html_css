@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Headphones</title>
+  <link rel="stylesheet" href="6-styles.css" />
+  <link rel="stylesheet" href="holberton_school-icon/holberton_style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo_headphones.png" alt="Headphones Logo">
+      </div>
+      <nav class="nav">
+        <a href="#what-we-do">what we do</a>
+        <a href="#our-results">our results</a>
+        <a href="#contact-us">contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Headphones for the modern world</h1>
+      <p class="subheading">Experience unparalleled sound quality with style and comfort.<br>Perfect for work, play, and everything in between.</p>
+      <button>Buy Now</button>
+      <p class="hero-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </section>
+
+  <section id="what-we-do" class="what-we-do">
+    <div class="icon-block">
+      <span class="holberton_school-icon-ic_sound"></span>
+      <h3>High Quality Audio</h3>
+      <p>Enjoy crisp and clear sound for all your favorite tunes and podcasts.</p>
+    </div>
+    <div class="icon-block">
+      <span class="holberton_school-icon-ic_video"></span>
+      <h3>Immersive Video Experience</h3>
+      <p>Feel the visuals come alive with synchronized, immersive audio-video playback.</p>
+    </div>
+    <div class="icon-block">
+      <span class="holberton_school-icon-ic_music"></span>
+      <h3>Music on the Go</h3>
+      <p>Stream and enjoy music wherever you are, wire-free.</p>
+    </div>
+    <div class="icon-block">
+      <span class="holberton_school-icon-ic_hearing"></span>
+      <h3>Comfort Fit</h3>
+      <p>Designed to stay snug on your ears, even for long hours.</p>
+    </div>
+  </section>
+
+  <section id="our-results" class="our-results">
+    <div class="container">
+      <p class="results-text">
+        We don’t just promise results — we deliver them. Every detail in our design and engineering contributes to a better audio experience.
+        From clarity to comfort, our headphones consistently boost user satisfaction, performance, and retention.
+      </p>
+      <div class="results-stats">
+        <div class="stat">
+          <div class="pentagon">
+            <p class="percent">+2%</p>
+            <p class="label">Performance</p>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="pentagon">
+            <p class="percent">+5%</p>
+            <p class="label">User Satisfaction</p>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="pentagon">
+            <p class="percent">+8%</p>
+            <p class="label">Engagement</p>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="pentagon">
+            <p class="percent">+10%</p>
+            <p class="label">Retention</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-us" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    // Basic form validation
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      const email = this.email.value;
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
+<footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <img src="images/logo_headphones.png" alt="Headphones Logo" />
+      </div>
+      <div class="footer-social">
+        <span class="holberton_school-icon-ic_twitter"></span>
+        <span class="holberton_school-icon-ic_facebook"></span>
+        <span class="holberton_school-icon-ic_instagram"></span>
+      </div>
+      <p>&copy; Headphones 2025</p>
+    </div>
+  </footer>
+</body>
+</html>

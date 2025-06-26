@@ -1,0 +1,146 @@
+/* Inherit all styles from Task 1 */
+@import url('3-styles.css');
+
+/* Our Results with CSS pentagons */
+.our-results {
+  background: url('images/headphones_hero_2.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.results-text {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.results-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat {
+  flex: 1 1 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pentagon {
+  width: 120px;
+  height: 120px;
+  background: #FF6565;  /* Red color you liked */
+  color: white;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.percent {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.label {
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Contact Us Section */
+.contact {
+  background-color: #fff;
+  color: #071629;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #FF6565;
+  outline: none;
+}
+
+.contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact button {
+  padding: 12px 25px;
+  background-color: #FF6565;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #e14c4c;
+}
+/* Footer */
+.footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  width: 160px;
+}
+
+.footer-social span {
+  font-size: 24px;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-social span:hover {
+  color: var(--main-color);
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 10px;
+}
