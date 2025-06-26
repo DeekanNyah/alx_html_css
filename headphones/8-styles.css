@@ -1,0 +1,66 @@
+@import url('7-styles.css');
+
+/* ========== Hamburger Icon Styles ========== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Rotate lines when menu is active */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ========== Responsive Nav Menu (Mobile) ========== */
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #071629;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 25px;
+    border-radius: 6px;
+    z-index: 100;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    color: white;
+    font-size: 16px;
+  }
+
+  .header .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
